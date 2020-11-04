@@ -72,12 +72,18 @@ main #main_wrapper {
   margin: auto;
   background-color: red;
 }
+main .row_title {
+  padding-top: 30px;
+  font-size: 22px;
+}
 main .row_items {
   display: flex;
   justify-content: space-between;
 }
 
 main .song {
+  width: 170px;
+  height:
 }
 main img {
   width: 170px;
