@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/style.css">
   <title>Document</title>
@@ -12,25 +13,52 @@
 <body>
   <div class="wrapper">
     <aside>
-      <div id="spotify_logo">
-        <i class="fab fa-spotify"></i>
-        <span>Spotify</span>
+      <div id="aside_top">
+        <div id="spotify_logo">
+          <i class="fab fa-spotify"></i>
+          <span>Spotify</span>
+        </div>
+        <div id="aside_menu">
+          <a href="#">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+          </a>
+          <a href="#">
+            <i class="fas fa-search"></i>
+            <span>Cerca</span>
+          </a>
+          <a href="#">
+            <i class="fas fa-book-open"></i>
+            <span>La tua Libreria</span>
+          </a>
+        </div>
+        <div id="aside_playlist">
+          <h3>playlist</h3>
+          <div id="playlists">
+            <a href="#">Nome Playlist</a>
+            <a href="#">Nome Playlist</a>
+            <a href="#">Nome Playlist</a>
+            <a href="#">Nome Playlist</a>
+            <a href="#">Nome Playlist</a>
+            <a href="#">Nome Playlist</a>
+            <a href="#">Nome Playlist</a>
+          </div>
+        </div>
       </div>
-      <div id="aside_nav">
-        <div class="nav_item">
-          Home
+
+      <div id="aside_bottom">
+        <div id="installa_app">
+          <i class="fas fa-arrow-circle-down"></i>
+          Installa app
         </div>
-        <div class="nav_item">
-          Cerca
-        </div>
-        <div class="nav_item">
-          La tua libreria
+        <div id="user">
+          <i class="fas fa-user"></i>
+          John Doe
         </div>
       </div>
     </aside>
 
     <main>
-
       <div id="cta">
         <div id="upgrade">
           effettua l'upgrade
@@ -40,18 +68,16 @@
       <div id="main_wrapper">
 
         <div id="main_header">
-          <div class="container">
-            <div>in evidenza</div>
-            <div>podcast</div>
-            <div>classifiche</div>
-            <div>generi e mood</div>
-            <div>nuove uscite</div>
-            <div>scopri</div>
-          </div>
+          <a href="#">in evidenza</a>
+          <a href="#">podcast</a>
+          <a href="#">classifiche</a>
+          <a href="#">generi e mood</a>
+          <a href="#">nuove uscite</a>
+          <a href="#">scopri</a>
         </div>
 
         <div class="row_title">
-          Recently played
+          <h2>Recently played</h2>
         </div>
         <div class="row_items">
           <div class="song">
@@ -111,7 +137,7 @@
         </div>
 
         <div class="row_title">
-          Creato per John Doe
+          <h2>Creato per John Doe</h2>
           <div class="row_subtitle">
             Più ascolti, più saranno accurati i suggerimenti.
           </div>
@@ -142,7 +168,7 @@
         </div>
 
         <div class="row_title">
-          Artisti più popolari
+          <h2>Artisti più popolari</h2>
           <div class="row_subtitle">
             Più ascolti, più saranno accurati i suggerimenti.
           </div>
@@ -176,9 +202,15 @@
     </main>
 
     <footer>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      <div id="footer_left">
+        lorem
+      </div>
+      <div id="footer_center">
+        lorem        
+      </div>
+      <div id="footer_right">
+        lorem
+      </div>
     </footer>
   </div>
 </body>

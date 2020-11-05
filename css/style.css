@@ -3,13 +3,22 @@
   margin: 0;
   padding: 0;
   color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+/* .ciao {
+  min-height: 70%;
+} */
+h3 {
+  font-size: 19px;
+  text-transform: uppercase;
 }
 
 .wrapper {
   width: 100%;
   height: 100vh;
 }
-
+main #cta::after,
 .wrapper::after {
   content: "";
   display: table;
@@ -19,70 +28,137 @@
 aside {
   width: 250px;
   height: calc(100% - 90px);
+  min-height: 480px;
   float: left;
   background-color: black;
-  overflow-y: scroll;
+  position: fixed;
+  top: 0;
+  left: 0;
   padding: 20px;
 }
-aside i {
+aside #aside_top {
+  padding-top: 20px;
+  height: calc(100% - 90px);
+  overflow: hidden;
+}
+aside #aside_top #spotify_logo i {
   font-size: 46px;
 }
-aside span {
+aside #aside_top #spotify_logo span {
   font-size: 30px;
   vertical-align: top;
   padding-left: 5px;
 }
-aside #aside_nav {
-  display: flex;
-  flex-direction: column;
-}
-aside .nav_item {
 
+aside #aside_top #aside_menu {
+  padding-top: 20px;
+}
+aside #aside_top #aside_menu a {
+  font-size: 15px;
+  height: 35px;
+  line-height: 35px;
+  opacity: 0.5;
+  text-decoration: none;
+  display: block;
+}
+aside #aside_top #aside_menu i {
+  font-size: 25px;
+  vertical-align: middle;
+}
+aside #aside_top #aside_menu span {
+  vertical-align: middle;
+  padding-left: 5px;
+}
+
+aside #aside_top #aside_playlist {
+  height: 60%;
+  padding-top: 20px;
+}
+aside #aside_top #aside_playlist #playlists {
+  overflow-y: auto;
+  height: 77%;
+}
+aside #aside_top #aside_playlist #playlists a {
+  font-size: 15px;
+  height: 35px;
+  line-height: 35px;
+  opacity: 0.5;
+  text-decoration: none;
+  display: block;
+}
+
+aside #aside_bottom {
+  width: 100%;
+  height: 90px;
+  background-color: black;
+  overflow-y: auto;
+}
+aside #aside_bottom  #installa_app {
+  width: 100%;
+  padding-bottom: 5%;
+  opacity: 0.5;
+  border-bottom: 1px solid white;
+}
+aside #aside_bottom  #installa_app i {
+  font-size: 15px;
+  padding-right: 5px;
+}
+aside #aside_bottom #user {
+  font-size: 20px;
+  padding-top: 15px;
+}
+aside #aside_bottom #user i {
+  font-size: 20px;
+  padding-right: 5px;
 }
 
 main {
   width: calc(100% - 250px);
   height: calc(100% - 90px);
+  margin-left: 250px;
   float: left;
   background-color: #141A22;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 main #cta {
   width: 100%;
   height: 90px;
-  background-color: #080B13
+  background-color: #080B13;
+  position: fixed;
+  top: 0;
 }
 main #cta #upgrade {
-  padding: 10px;
   border: 1px solid white;
-  text-transform: uppercase;
-  float: right;
-  margin-top: 20px;
-  margin-right: 6px;
+  display: inline-block;
+  padding: 10px;
 }
 
-main #main_header {
-  width: 100%;
+main #main_wrapper {
+  width: 97%;
+  margin: auto;
+  padding-top: 110px;
 }
-main #main_header .container {
-  width: 80%;
+main #main_header {
   text-align: center;
 }
-main #main_header .container div {
+main #main_header a {
   display: inline-block;
   padding: 0 10px;
   padding-top: 20px;
   padding-bottom: 20px;
   text-transform: uppercase;
+  text-decoration: none;
+  opacity: 0.5;
 }
-main #main_wrapper {
-  width: 97%;
-  margin: auto;
-  background-color: red;
-}
+
 main .row_title {
   padding-top: 30px;
+  padding-bottom: 35px;
   font-size: 22px;
+}
+main .row_subtitle {
+  font-size: 16px;
+  opacity: 0.5;
 }
 main .row_items {
   display: flex;
@@ -101,8 +177,18 @@ main img {
 footer {
   width: 100%;
   height: 90px;
-  float: left;
-  background-color: grey;
   background-color: #282828;
-  overflow-y: scroll;
+  position: fixed;
+  bottom: 0;
+  justify-content: space-between;
+  display: flex;
+}
+#footer_left {
+  background-color: red;
+}
+#footer_center {
+  background-color: green;
+}
+#footer_right {
+  background-color: blue;
 }
