@@ -37,19 +37,12 @@ aside {
   padding: 20px;
 }
 aside #aside_top {
-  padding-top: 20px;
   height: calc(100% - 90px);
   overflow: hidden;
 }
-aside #aside_top #spotify_logo i {
-  font-size: 46px;
+aside #aside_top img {
+  width: 164px;
 }
-aside #aside_top #spotify_logo span {
-  font-size: 30px;
-  vertical-align: top;
-  padding-left: 5px;
-}
-
 aside #aside_top #aside_menu {
   padding-top: 20px;
 }
@@ -149,15 +142,17 @@ main #main_header a {
   text-transform: uppercase;
   text-decoration: none;
   opacity: 0.5;
+  font-size: 12px;
 }
 
 main .row_title {
   padding-top: 30px;
   padding-bottom: 35px;
-  font-size: 22px;
+  font-size: 19px;
 }
 main .row_subtitle {
-  font-size: 16px;
+  padding-top: 5px;
+  font-size: 14px;
   opacity: 0.5;
 }
 main .row_items {
@@ -192,7 +187,6 @@ footer img {
 #footer_left {
   display: flex;
   align-items: center;
-  background-color: red;
 }
 #footer_left #info_song {
   display: inline-block;
@@ -206,23 +200,46 @@ footer img {
   opacity: 0.5;
 }
 #footer_left i:first-of-type {
+  font-size: 13px;
   padding-left: 54px;
   padding-right: 15px;
   opacity: 0.5;
 }
 #footer_left i:last-of-type {
+  font-size: 13px;
   opacity: 0.5;
 }
 
 #footer_center {
-  background-color: green;
 }
 #footer_center .center_top {
   text-align: center;
+  padding-bottom: 10px;
+}
+#footer_center .center_top i {
+  font-size: 20px;
+}
+#footer_center .center_top .far.fa-play-circle {
+  padding: 0 20px;
+  font-size: 30px;
+}
+#footer_center .center_top .fas.fa-random,
+#footer_center .center_top .fas.fa-redo-alt  {
+  padding: 0 15px;
 }
 #footer_center .center_bottom input {
   width: 400px;
 }
+
 #footer_right {
-  background-color: blue;
+  display: flex;
+  align-items: center;
+}
+#footer_right i {
+  font-size: 13px;
+  padding: 8px;
+  opacity: 0.5;
+}
+#footer_right input {
+  padding-left: 15px;
 }
