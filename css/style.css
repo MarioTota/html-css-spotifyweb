@@ -6,26 +6,27 @@
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
 }
-/* .ciao {
-  min-height: 70%;
-} */
-h3 {
-  font-size: 19px;
-  text-transform: uppercase;
+a {
+  text-decoration: none;
 }
 
-.wrapper {
-  width: 100%;
-  height: 100vh;
+#main_header .active {
+  width: 33px;
+  height: 3px;
+  background-color: #ADFF2F;
+  position: absolute;
+  bottom: 0;
+  left: 26%;
 }
-main #cta::after,
-.wrapper::after {
-  content: "";
-  display: table;
-  clear: both;
+#aside_menu .active {
+  width: 3px;
+  height: 33px;
+  background-color: #ADFF2F;
+  position: absolute;
+  top: 95px;
+  left: 0;
 }
-
-aside {
+#aside {
   width: 250px;
   height: calc(100% - 90px);
   min-height: 480px;
@@ -36,169 +37,194 @@ aside {
   left: 0;
   padding: 20px;
   font-size: 12px;
+  z-index: 2;
 }
-aside #aside_top {
+#aside_top {
   height: calc(100% - 90px);
   overflow: hidden;
 }
-aside #aside_top h3 {
+#aside_top h3 {
   font-size: 15px;
+  text-transform: uppercase;
 }
-aside #aside_top img {
+#aside_top img {
   width: 164px;
 }
-aside #aside_top #aside_menu {
+#aside_top #aside_menu {
   padding-top: 20px;
 }
-aside #aside_top #aside_menu a {
+#aside_top #aside_menu a {
   height: 35px;
   line-height: 35px;
-  opacity: 0.5;
   text-decoration: none;
   display: block;
 }
-aside #aside_top #aside_menu i {
-  font-size: 21px;
+#aside_top #aside_menu i {
+  font-size: 23px;
   vertical-align: middle;
+  color: #A3A3A3;
 }
-aside #aside_top #aside_menu span {
+#aside_top #aside_menu span {
   vertical-align: middle;
   padding-left: 5px;
+  font-size: 15px;
+  color: #A3A3A3;
+}
+#aside_top #aside_menu .white,
+#aside_top #aside_menu .fas.fa-home {
+  color: white;
 }
 
-aside #aside_top #aside_playlist {
+#aside_top #aside_playlist {
   height: 60%;
   padding-top: 20px;
 }
-aside #aside_top #aside_playlist #playlists {
+#aside_top #aside_playlist #playlists {
   overflow-y: auto;
   height: 77%;
 }
-aside #aside_top #aside_playlist #playlists .btn {
+#aside_top #aside_playlist .btn {
   font-size: 18px;
   margin: 20px 0;
   color: white;
+  color: #A3A3A3;
+  text-decoration: none;
+  height: 35px;
+  line-height: 35px;
+  display: block;
 }
 .btn::before {
-  content: "+";
+  font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f067";
   display: inline-block;
   width: 35px;
   height: 35px;
   line-height: 35px;
   text-align: center;
   background-color: grey;
-  color: white;
+  color: black;
   margin-right: 10px;
+  font-size: 20px;
 }
-
-aside #aside_top #aside_playlist #playlists a {
+#aside_top #aside_playlist #playlists a {
   font-size: 14px;
   height: 35px;
   line-height: 35px;
-  opacity: 0.5;
+  color: #A3A3A3;
   text-decoration: none;
   display: block;
 }
 
-aside #aside_bottom {
+#aside_bottom {
   width: 100%;
   height: 90px;
   background-color: black;
 }
-aside #aside_bottom  #installa_app {
+#aside_bottom  #installa_app {
   width: 100%;
   padding-bottom: 5%;
-  opacity: 0.5;
   border-bottom: 1px solid white;
   padding-top: 14px;
 }
-aside #aside_bottom  #installa_app i {
+#aside_bottom  #installa_app a,
+#aside_bottom  #installa_app i {
+  color: #A3A3A3;
+}
+#aside_bottom  #installa_app i {
   font-size: 14px;
   padding-right: 5px;
 }
-aside #aside_bottom #user {
+#aside_bottom #user {
   font-size: 18px;
   padding-top: 27px;
 }
-aside #aside_bottom #user i {
+#aside_bottom #user i {
   font-size: 20px;
   padding-right: 5px;
 }
-
-main {
+#main {
   width: calc(100% - 250px);
-  height: calc(100% - 90px);
+  height: calc(100vh - 90px);
   margin-left: 250px;
   float: left;
   background-color: #141A22;
   overflow-y: auto;
 }
-main #cta {
+
+#cta {
   width: 100%;
   height: 90px;
-  background-color: #080B13;
   position: fixed;
   top: 0;
 }
-main #cta #upgrade {
+#cta .layover {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding-right: 20px;
+}
+#cta #upgrade {
   border: 1px solid white;
-  display: inline-block;
   padding: 10px;
-  width: 174px;
-  height: 50px;
-  float: right;
+}
+#cta a {
+  text-decoration: none;
 }
 
-main #main_wrapper {
-  width: 97%;
-  margin: auto;
-  padding-top: 110px;
-}
-main #main_header {
+#main_header {
   text-align: center;
+  padding-top: 110px;
+  position: relative;
 }
-main #main_header a {
+#main_header a {
   display: inline-block;
   padding: 0 10px;
   padding-top: 20px;
   padding-bottom: 7px;
   text-transform: uppercase;
   text-decoration: none;
-  opacity: 0.5;
+  color: #A3A3A3;
   font-size: 12px;
 }
 
-main .row_title {
-  padding-top: 30px;
-  padding-bottom: 35px;
-  font-size: 16px;
-}
-main .row_subtitle {
-  padding-top: 5px;
-  font-size: 13px;
-  opacity: 0.5;
-}
-main .row_items {
+.row_items {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 10px;
+}
+.row_items .song {
+  width: calc(100%/6);
+  text-align: center;
+  padding: 0 10px;
+}
+.row_items img {
+  width: 100%;
 }
 
-main .song {
-  width: 170px;
-  text-align: center;
+.row_title_subtitle {
+  padding-top: 30px;
+  padding-bottom: 35px;
+  padding-left: 20px;
 }
-main img {
-  width: 170px;
-  height: 170px;
+.row_title_subtitle h2 {
+  font-size: 22px;
 }
-main .song .song_title {
+.row_title_subtitle h4 {
+  padding-top: 5px;
+  font-size: 14px;
+  color: #A3A3A3;
+}
+.row_items .song .song_title {
   padding-top: 14px;
   font-size: 14px;
 }
-main .song .song_subtitle {
+.row_items .song .song_subtitle {
   font-size: 12px;
   padding-top: 8px;
-  opacity: 0.5;
+  padding-bottom: 10px;
+  color: #A3A3A3;
 }
 
 footer {
@@ -211,6 +237,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 3;
 }
 footer img {
   width: 50px;
@@ -219,6 +246,7 @@ footer img {
 #footer_left {
   display: flex;
   align-items: center;
+  width: 250px;
 }
 #footer_left #info_song {
   display: inline-block;
@@ -229,17 +257,17 @@ footer img {
 }
 #footer_left #info_song .brano {
   font-size: 10px;
-  opacity: 0.5;
+  color: #A3A3A3;
 }
-#footer_left i:first-of-type {
-  font-size: 13px;
-  padding-left: 54px;
-  padding-right: 15px;
-  opacity: 0.5;
+#footer_left .far.fa-heart {
+  font-size: 16px;
+  color: #A3A3A3;
+  padding-left: 60px;
 }
-#footer_left i:last-of-type {
-  font-size: 13px;
-  opacity: 0.5;
+#footer_left .far.fa-folder {
+  font-size: 16px;
+  color: #A3A3A3;
+  padding-left: 20px;
 }
 
 #footer_center {
@@ -266,12 +294,27 @@ footer img {
 #footer_right {
   display: flex;
   align-items: center;
+  width: 250px;
 }
 #footer_right i {
   font-size: 13px;
   padding: 8px;
-  opacity: 0.5;
+  color: #A3A3A3;
 }
 #footer_right input {
   padding-left: 15px;
+}
+
+@media screen and (max-width: 970px) {
+
+  .row_items .song {
+    width: calc(100%/4);
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .row_items .song {
+    width: calc(100%/2);
+  }
 }
