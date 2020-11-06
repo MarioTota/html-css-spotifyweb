@@ -17,7 +17,7 @@
           <img src="img/spotify.png" alt="">
         </div>
         <div id="aside_menu">
-          <div class="active"></div>
+          <!-- <div class="active"></div> -->
           <a href="#">
             <i class="fas fa-home"></i>
             <span class="white">Home</span>
@@ -60,8 +60,21 @@
           </a>
         </div>
       </div>
-    </section>
 
+      <!-- barra nascosta per dispositivi xs -->
+      <div id="aside_top_hidden">
+        <a href="#"><i class="fab fa-spotify"></i></a>
+        <a href="#"><i class="fas fa-home"></i></a>
+        <a href="#"><i class="fas fa-search"></i></a>
+        <a href="#"><i class="fas fa-book-open"></i>
+      </div>
+
+      <div id="aside_bottom_hidden">
+        <a href="#"><i class="fas fa-arrow-circle-down"></i></a>
+        <a href="#"><i class="fas fa-user"></i></a>
+      </div>
+    </section>
+    <!-- /barra nascosta per dispositivi xs -->
     <section id="cta">
       <div class="layover">
         <a id="upgrade" href="#">effettua l'upgrade</a>
@@ -70,13 +83,15 @@
 
     <section id="main">
       <div id="main_header">
-        <div class="active"></div>
-        <a href="#">in evidenza</a>
-        <a href="#">podcast</a>
-        <a href="#">classifiche</a>
-        <a href="#">generi e mood</a>
-        <a href="#">nuove uscite</a>
-        <a href="#">scopri</a>
+        <div id="wrapper_main_header">
+          <a href="#">in evidenza</a>
+          <a href="#">podcast</a>
+          <a href="#">classifiche</a>
+          <a href="#">generi e mood</a>
+          <a href="#">nuove uscite</a>
+          <a href="#">scopri</a>
+        </div>
+        <!-- <div class="active"></div> -->
       </div>
       <div class="row_top">
         <div class="row_title_subtitle">
