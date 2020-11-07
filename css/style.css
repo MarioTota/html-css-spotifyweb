@@ -123,7 +123,7 @@ a {
 #aside_bottom  #installa_app {
   width: 100%;
   padding-bottom: 5%;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #A3A3A3;;
   padding-top: 14px;
 }
 #aside_bottom  #installa_app a,
@@ -245,14 +245,14 @@ footer {
   align-items: center;
   z-index: 3;
 }
-footer img {
-  width: 50px;
-  height: 50px;
-}
 #footer_left {
   display: flex;
   align-items: center;
-  width: 250px;
+  width: 242px;
+}
+#footer_left img {
+  width: 50px;
+  height: 50px;
 }
 #footer_left #info_song {
   display: inline-block;
@@ -277,10 +277,14 @@ footer img {
 }
 
 #footer_center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 #footer_center .center_top {
   text-align: center;
   padding-bottom: 10px;
+  min-width: 222px;
 }
 #footer_center .center_top i {
   font-size: 20px;
@@ -293,23 +297,30 @@ footer img {
 #footer_center .center_top .fas.fa-redo-alt  {
   padding: 0 15px;
 }
+#footer_center .center_bottom {
+  display: flex;
+}
 #footer_center .center_bottom input {
   width: 400px;
+}
+#footer_center .timing_song {
+  padding: 0 30px;
+  display: inline-block;
+  font-size: 10px;
+  vertical-align: text-top;
 }
 
 #footer_right {
   display: flex;
   align-items: center;
-  width: 250px;
+  width: 242px;
 }
 #footer_right i {
-  font-size: 13px;
+  font-size: 16px;
   padding: 8px;
   color: #A3A3A3;
 }
-#footer_right input {
-  padding-left: 15px;
-}
+
 
 @media screen and (max-width: 767px) {
   #main_header a {
@@ -383,10 +394,56 @@ footer img {
   }
   #main_header a {
     padding-bottom: 40px;
+    font-size: 11px;
   }
 
   .row_items .song {
     padding: 14px;
+  }
+
+  .rotate {
+    width: 44px;
+    margin-left: 13px;
+  }
+  #footer_left img {
+    height: 27px;
+    width: 27px;
+  }
+  #footer_left #info_song .artist,
+  #footer_left #info_song .brano {
+    font-size: 8px;
+  }
+  #footer_left .far.fa-heart {
+    padding-left: 0;
+    display: block;
+    padding-bottom: 3px;
+    font-size: 13px;
+  }
+  #footer_left .far.fa-folder {
+    padding-left: 0;
+    font-size: 13px;
+  }
+  #footer_center .center_top i {
+    font-size: 13px;
+  }
+  #footer_center .center_top .far.fa-play-circle {
+    padding: 0px 6px;
+    font-size: 23px;
+  }
+  #footer_center .center_top .fas.fa-random, #footer_center .center_top .fas.fa-redo-alt {
+    padding: 0px 3px;
+  }
+  #footer_center .timing_song {
+    padding: 0 5px;
+  }
+  #footer_center .center_bottom input {
+    width: 100%;
+  }
+  #footer_right i {
+    font-size: 13px
+  }
+  #footer_right input {
+    width: 100%;
   }
 }
 @media (min-width:768px) and (max-width:992px) {
@@ -409,6 +466,14 @@ footer img {
   #wrapper_main_header a {
     width: calc(100% / 3);
   }
+  #footer_left .far.fa-heart {
+    padding-left: 10px;
+    display: block;
+    padding-bottom: 3px;
+  }
+  #footer_left .far.fa-folder {
+    padding-left: 10px;
+  }
 }
 @media (min-width:993px) and (max-width:1200px) {
   #wrapper_main_header a {
@@ -416,6 +481,14 @@ footer img {
   }
   .row_items .song {
     width: calc(100%/4);
+  }
+  #footer_left .far.fa-heart {
+    padding-left: 20px;
+    display: block;
+    padding-bottom: 3px;
+  }
+  #footer_left .far.fa-folder {
+    padding-left: 20px;
   }
 }
 @media (min-width:1201px) {
@@ -438,4 +511,14 @@ footer img {
   .row_items .song {
     padding: 14px;
   }
+  #footer_left {
+    width: 25%;
+  }
+  #footer_center {
+    width: 50%;
+  }
+  #footer_right {
+    width: 25%;
+  }
+
 }
