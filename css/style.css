@@ -173,6 +173,7 @@ a {
   height: 90px;
   position: fixed;
   top: 0;
+  z-index: 1;
 }
 #cta .layover {
   width: 100%;
@@ -399,7 +400,7 @@ footer {
   }
 
   .row_title_subtitle h2 {
-    font-size: 35px;
+    font-size: 22px;
   }
   .row_items .song {
     padding: 14px;
@@ -522,9 +523,7 @@ footer {
     padding-bottom: 40px;
   }
 
-  .row_title_subtitle h2 {
-    font-size: 35px;
-  }
+  
   .row_items .song {
     padding: 14px;
     width: calc(100%/2);
@@ -570,15 +569,16 @@ footer {
   #aside_bottom_hidden {
     display: none;
   }
+  .row_title_subtitle h2 {
+    font-size: 35px;
+  }
 }
 
 @media (max-width:1200px) {
   #main_header a {
     padding-bottom: 40px;
   }
-  .row_title_subtitle h2 {
-    font-size: 35px;
-  }
+
   .row_items .song {
     padding: 14px;
   }
